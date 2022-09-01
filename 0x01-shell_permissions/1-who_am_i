@@ -1,1 +1,3 @@
-#!/bin/bash whoiam
+#!/bin/bash
+echo "$USER"
+whoami
