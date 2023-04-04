@@ -3,7 +3,7 @@
 # sends traffic to web-01 and web-02
 
 
-CONFGF="\\\nlisten appname 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 2135-web-01 54.89.182.45 check\n\tserver 2135-web-02 54.175.144.43 check\n"
+CONFGF="\\\nlisten appname 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 99731-web-01 54.89.182.45 check\n\tserver 99731-web-02 54.175.144.43 check\n"
 
 sudo apt-get update
 sudo apt-get -y install nginx
